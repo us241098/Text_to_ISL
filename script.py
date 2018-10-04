@@ -9,12 +9,15 @@ from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem.porter import *
 
-
 nltk.download('wordnet')
-	
-df = pd.read_csv('text.csv')
-txt = "What is his name?" 
-txt=txt.replace('.',' ')
-txt=txt.replace(',',' ')
-tokenized = sent_tokenize(txt)
-print tokenized
+def main:
+
+	df = pd.read_csv('text.csv')
+	txt = "What is his name?" 
+	txt=txt.replace('.',' ')
+	txt=txt.replace(',',' ')
+	tokenized = sent_tokenize(txt)
+	print tokenized
+
+if __name__ == '__main__':
+	main()
